@@ -1,0 +1,31 @@
+<html>
+    <script>
+        function set(){
+            
+            var a = document.getElementById("hour").value;
+            
+        if(a<10)
+        {
+            document.getElementById("demo").innerHTML="Good morning";
+            
+        }
+        else if(a<20)
+        {
+            document.getElementById("demo").innerHTML="Good day";
+        }
+        else{
+            document.getElementById("demo").innerHTML="Good evening";
+        }
+        }
+        
+    </script>
+    <body>
+        <input type = "text" id = "hour">
+        <button id = "button" onclick = "set()">Try it</button>
+        <div id = "demo"></div>
+        
+    </body>
+    
+    
+    
+</html>
